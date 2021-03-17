@@ -2,12 +2,10 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8"/>
-  <title>Projeto Site em HTML</title>
   <style>
-    div#interface{
+    div#interface {
       color: white;
-      background-color: black;
-       
+      background-color: black; 
     }
   </style>
 </head>
