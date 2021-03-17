@@ -4,8 +4,8 @@
   <meta charset="UTF-8"/>
   <style> 
     body {
-      color: white;
-      background-color: black; 
+      color: #ffffff;
+      background-color: hsla(165, 81%, 93%, 0.5); 
     }
   </style>
 </head>
