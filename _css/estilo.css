@@ -140,7 +140,7 @@ section#corpo {
     width: 500px;
     float: left;
     border-right: 1px solid #606060;
-    padding-right: 20px;
+    padding-right: 15px;
 }
 
 article#noticia-principal h2 {
@@ -189,14 +189,14 @@ table#tabelaspec td {
     vertical-align: middle;
 }
 
-table#tabelaspec td.ce {
+table#tabelaspec td.colunaesq {
     color: #ffffff;
     background-color: #606060;
     vertical-align: top;
     font-weight: bold;
 }
 
-table#tabelaspec td.cd {
+table#tabelaspec td.colunadir {
     background-color: #cecece;
 }
 
