@@ -9,17 +9,17 @@
     function acendeLampada (){
       if (quebrada1) return;
    // if (quebrada == false){
-        document.getElementById("luz1").src = "_imagens/lampada-acesa.jpg";
+        document.getElementById("luz1").src = "_imagens/lampada-acesa.png";
   // }
     }
     function apagaLampada () {
       if (quebrada1) return;
    // if (quebrada == false){
-        document.getElementById("luz1").src = "_imagens/lampada-apagada.jpg";
+        document.getElementById("luz1").src = "_imagens/lampada-apagada.png";
   // }
     }
     function quebrarLampada () {
-      document.getElementById("luz1").src = "_imagens/lampada-quebrada.jpg";
+      document.getElementById("luz1").src = "_imagens/lampada-quebrada.png";
       quebrada1 = true; 
     }
   </script>
@@ -27,13 +27,13 @@
     var quebrada2 = false;
     function mudaLampada (tipo) {
       if (tipo == 1){
-        arquivo = "_imagens/lampada-acesa.jpg";
+        arquivo = "_imagens/lampada-acesa.png";
       }
       if (tipo == 2) {
-        arquivo = "_imagens/lampada-apagada.jpg";
+        arquivo = "_imagens/lampada-apagada.png";
       }
       if (tipo == 3) {
-        arquivo = "_imagens/lampada-quebrada.jpg";
+        arquivo = "_imagens/lampada-quebrada.png";
       }
       if (!quebrada2) {
         document.getElementById("luz2").src = arquivo;
@@ -47,7 +47,7 @@
     var quebrada3 = false;
     function lampada (tipo) {
       if (!quebrada3) {
-        document.getElementById("luz3").src = "_imagens/" + tipo + ".jpg";
+        document.getElementById("luz3").src = "_imagens/" + tipo + ".png";
         if (tipo == 'lampada-quebrada') {
           quebrada3 = true;
         }
@@ -58,15 +58,21 @@
 <body>
   <div id="metodo1">
     <h1>Lâmpada Método 1</h1>
-    <img src="_imagens/lampada-apagada.jpg" id="luz1" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebrarLampada()"/>
+  <figure>
+      <img src="_imagens/lampada-apagada.png" id="luz1" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebrarLampada()"/>
+    </figure>
   </div>
   <div id="metodo2">
     <h1>Lâmpada Método 2</h1>
-    <img src="_imagens/lampada-apagada.jpg" id="luz2" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)" />
+    <figure>
+      <img src="_imagens/lampada-apagada.png" id="luz2" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)" />
+    </figure>
   </div>
   <div id="metodo3">
     <h1>Lâmpada Método 3</h1>
-    <img src="_imagens/lampada-apagada.jpg" id="luz3" onmousemove="lampada('lampada-acesa')" onmouseout="lampada('lampada-apagada')" onclick="lampada('lampada-quebrada')" />
+    <figure>
+      <img src="_imagens/lampada-apagada.png" id="luz3" onmousemove="lampada('lampada-acesa')" onmouseout="lampada('lampada-apagada')" onclick="lampada('lampada-quebrada')" />
+    </figure>
   </div>
 </body>
 </html>
